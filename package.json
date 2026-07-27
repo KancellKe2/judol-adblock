@@ -1,0 +1,25 @@
+{
+  "name": "judol-adblock",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker - Pencari & blokir domain judi online untuk AdGuard DNS",
+  "main": "src/worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "test": "node scripts/test-blocklist.js"
+  },
+  "keywords": [
+    "cloudflare-worker",
+    "adguard",
+    "blocklist",
+    "gambling",
+    "judi",
+    "dns-blocking"
+  ],
+  "author": "KancellKe2",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

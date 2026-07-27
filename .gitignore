@@ -1,4 +1,25 @@
-node_modules/
+# Cloudflare Workers
+*.workers.dev
 .wrangler/
+
+# Node
+node_modules/
+package-lock.json
+
+# Environment
 .dev.vars
-dist/
+.env
+.env.local
+
+# Output
+output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

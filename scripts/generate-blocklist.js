@@ -170,6 +170,15 @@ function generateBrandCombinations() {
 
 function fetchOmniRoute() {
   return new Promise((resolve, reject) => {
+    // Build headers dengan API key
+    const headers = {
+      "Accept": "application/json",
+    };
+    if (OMNIROUTE_API_KEY) {
+      headers["Authorization"] = `Bearer ${OMNIROUTE_API_KEY}`;
+      headers["X-API-Key"] = OMNIROUTE_API_KEY;
+    }
+
     const endpoints = [
       "/domains",
       "/search?q=gambling",

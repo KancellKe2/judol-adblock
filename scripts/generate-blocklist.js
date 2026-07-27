@@ -115,7 +115,7 @@ async function main() {
   console.log(`   ✓ ${brandDomains.length} brand combinations`);
 
   // 3. OmniRoute API
-  if (OMNIROUTE_API_URL) {
+  if (OMNIROUTE_API_URL && OMNIROUTE_API_KEY) {
     console.log("🔍 Fetching from OmniRoute API...");
     try {
       const omniDomains = await fetchOmniRoute();
@@ -124,6 +124,8 @@ async function main() {
     } catch (err) {
       console.log(`   ⚠ OmniRoute unavailable: ${err.message}`);
     }
+  } else if (OMNIROUTE_API_URL && !OMNIROUTE_API_KEY) {
+    console.log("   ⚠ OmniRoute skipped: API key not set");
   }
 
   // 4. Tranco list

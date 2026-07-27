@@ -5,7 +5,7 @@
  * Format output: AdGuard DNS compatible (||domain.com^)
  *
  * Deploy: https://workers.cloudflare.com/
- * Config: Set OMNIROUTE_API_URL di Environment Variables
+ * Config: Set OMNIROUTE_API_URL & OMNIROUTE_API_KEY di Environment Variables
  */
 
 export default {

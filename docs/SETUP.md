@@ -29,6 +29,7 @@ Set di Cloudflare Dashboard → Workers → judol-adblock → Settings → Varia
 2. Tambahkan secrets:
    - `CLOUDFLARE_API_TOKEN`: Token dari Cloudflare
    - `CLOUDFLARE_ACCOUNT_ID`: ID akun Cloudflare
+   - `OMNIROUTE_API_KEY`: API Key OmniRoute (opsional, untuk pencarian domain)
 
 ### Cara Dapat Cloudflare API Token
 

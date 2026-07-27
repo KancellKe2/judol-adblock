@@ -9,6 +9,7 @@ Set di Cloudflare Dashboard → Workers → judol-adblock → Settings → Varia
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
 | `OMNIROUTE_API_URL` | ❌ | `http://129.226.89.157:20128/v1` | Base URL API OmniRoute |
+| `OMNIROUTE_API_KEY` | ✅ | - | API Key untuk OmniRoute (WAJIB untuk aktifkan pencarian) |
 
 ### KV Namespace
 

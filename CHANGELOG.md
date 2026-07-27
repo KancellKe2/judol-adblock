@@ -33,6 +33,13 @@ Format berdasarkan [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **API Key Required** - OmniRoute sekarang membutuhkan API key untuk pencarian
+- **Environment Variables** - Tambah `OMNIROUTE_API_KEY` sebagai secret
+- **Worker** - Auto skip OmniRoute jika API key tidak diset
+- **Documentation** - Panduan lengkap setup API key di README.md & docs/SETUP.md
+
 ### Planned
 
 - [ ] Web scraper untuk mengambil domain dari situs judi

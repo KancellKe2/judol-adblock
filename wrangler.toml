@@ -5,6 +5,7 @@ compatibility_date = "2024-01-01"
 # ── Environment Variables ──
 # Set di Cloudflare Dashboard → Workers → Settings → Variables
 # OMNIROUTE_API_URL = "http://129.226.89.157:20128/v1"
+# OMNIROUTE_API_KEY = "YOUR_API_KEY_HERE"  # Wajib untuk pencarian domain
 
 # ── Optional: KV Namespace untuk caching stats ──
 # Uncomment setelah buat KV Namespace di dashboard

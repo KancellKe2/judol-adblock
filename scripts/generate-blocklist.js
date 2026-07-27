@@ -12,6 +12,8 @@ const path = require("path");
 // ── Config ──
 const OMNIROUTE_API_URL =
   process.env.OMNIROUTE_API_URL || "http://129.226.89.157:20128/v1";
+const OMNIROUTE_API_KEY =
+  process.env.OMNIROUTE_API_KEY || "";
 
 const OUTPUT_DIR = path.join(__dirname, "..", "output");
 const OUTPUT_FILE = path.join(OUTPUT_DIR, "blocklist.txt");

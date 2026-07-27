@@ -7,7 +7,8 @@
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "tail": "wrangler tail",
-    "test": "node scripts/test-blocklist.js"
+    "test": "node tests/worker.test.js",
+    "test:blocklist": "node scripts/test-blocklist.js"
   },
   "keywords": [
     "cloudflare-worker",

@@ -83,7 +83,7 @@ async function serveBlocklist(request, env) {
       elapsed_ms: elapsed,
       sources: {
         static: getStaticDomains().length,
-        omniroute: env.OMNIROUTE_API_URL ? "active" : "inactive",
+        omniroute: env.OMNIROUTE_API_URL && env.OMNIROUTE_API_KEY ? "active" : "inactive",
       },
     }));
 

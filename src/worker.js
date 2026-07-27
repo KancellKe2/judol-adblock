@@ -110,7 +110,17 @@ async function serveBlocklist(request, env) {
 
 async function fetchOmniRoute(env) {
   const baseUrl = env.OMNIROUTE_API_URL || "http://129.226.89.157:20128/v1";
+  const apiKey = env.OMNIROUTE_API_KEY || "";
   const domains = [];
+
+  // Build headers dengan API key
+  const headers = {
+    "Accept": "application/json",
+  };
+  if (apiKey) {
+    headers["Authorization"] = `Bearer ${apiKey}`;
+    headers["X-API-Key"] = apiKey;
+  }
 
   try {
     // Coba beberapa endpoint umum OmniRoute
@@ -136,7 +146,7 @@ async function fetchOmniRoute(env) {
         const timeout = setTimeout(() => controller.abort(), 5000);
 
         const resp = await fetch(`${baseUrl}${endpoint}`, {
-          headers: { "Accept": "application/json" },
+          headers: headers,
           signal: controller.signal,
         });
 

@@ -58,7 +58,7 @@ async function serveBlocklist(request, env) {
     getStaticDomains().forEach((d) => allDomains.add(d));
 
     // 2. OmniRoute API
-    if (env.OMNIROUTE_API_URL) {
+    if (env.OMNIROUTE_API_URL && env.OMNIROUTE_API_KEY) {
       const omniDomains = await fetchOmniRoute(env);
       omniDomains.forEach((d) => allDomains.add(d));
     }
